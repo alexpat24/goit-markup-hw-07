@@ -1,0 +1,33 @@
+@import"./root-variables";
+@import"./header";
+@import"./main-index";
+@import"./utils/placeholders";
+@import"./footer";
+@import"./main-portfolio";
+@import"./sprite";
+@import"./form";
+
+
+body{ 
+    background-color: #329399 ;
+    margin: 0px;
+    padding: 0px;
+}
+
+.width-conteiner{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 480px;
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* what are we do */
+/* li out dot */
+ul{
+    list-style: none;
+}
+/* h1 in portfolio */
+.ghost{
+    display: none
+}

@@ -1,0 +1,189 @@
+    // ФОРМА 
+.form {
+  width: 450px;
+  padding: 40px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  background-color: #ffffff;
+}
+.form-field {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 40px; 
+    
+}
+.form-field-textarea{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 20px; 
+    
+}
+.form textarea {
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+    font-family: inherit;
+    border-radius: 10px;
+    /* border: 3px solid var(--primary-text-color); */
+    cursor: pointer;
+}
+.form-label-textarea{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    /* color: 1px solid var(--primary-text-color); */
+
+    
+}
+.form-input{
+    width: 406px;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
+    padding-left: 40px;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 10px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.form-label{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    /* line-height: 16px; */
+    position: absolute;
+    top: 8px;
+    left: 40px;
+}
+.form-input:hover + .form-label,
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label,
+.form-textarea:hover + .form-label-textarea,
+.form-textarea:focus + .form-label-textarea,
+.form-label-textarea:focus-within,
+.form-textarea:not(:placeholder-shown) ~ .form-label-textarea
+{
+    color: var(--accent-text-color);
+    left: 0px;
+    transform: translateY(-150%);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.form-input:hover, .form-textarea:hover,
+.form-input:focus, .form-textarea:focus{
+    border-color: 1px solid var(--accent-text-color);
+    border: 1px solid var(--accent-text-color);
+    cursor: pointer;
+    outline: none;
+}
+
+
+.form-name{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+
+.form-field-policy{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 30px;
+    
+}
+.policy{
+    color: var(--accent-text-color);
+    text-decoration-color: var(--accent-text-color);
+    cursor: pointer;
+}
+.text-policy{
+    font-size: 16px;
+   
+}
+.form-push{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 55px;
+    padding-left: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: var(--primary-white-color);
+    background-color: var(--accent-text-color);
+    border-color: var(--primary-white-color);
+    cursor: pointer;
+    outline: none;
+}
+.form-push:hover,
+.form-push:focus{
+    box-shadow:  0px 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/* .baner-button */
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 48, 49, 0.8);
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.form-close-button{
+    position: absolute;
+    width: 40px;
+    height: 40px; 
+    top: 0;
+    right:0;
+    padding:0;
+    cursor: pointer;
+    border: 0px;
+    background-color: #ffffff;
+    outline: none;
+}
+/* иконки */
+.form-icon{
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    padding-right: 5px;
+}
+.form-input:focus ~ .form-icon,
+.form-input:hover ~ .form-icon,
+.form-icon-close:hover,
+.form-icon:hover{
+    fill:var(--accent-text-color);
+}
+.form-icon-close{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    margin: 0;
+    padding:0
+
+}

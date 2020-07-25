@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара с иконками</title>
+    <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/master/modern-normalize.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+<body>
+    <div>
+        <a href="/index.html">Назад на главную</a>
+    </div>
+
+    <h1>Форма</h1>
+
+    <form autocomplete="off" class="form js-form">
+        <h2 class="form-name">Оставьте свои данные, мы вам перезвоним</h2>
+        <div class="form-field">
+            <input autofocus type="text" placeholder="" name="customer-name" id="customer-name" class="form-input" />
+            <label for="customer-name" class="form-label">Имя</label>
+        </div>
+
+        <div class="form-field">
+            <input type="tel" autocomplete="on" placeholder="" name="customer-phone" id="customer-phone"
+                class="form-input" />
+            <label for="customer-phone" class="form-label">Телефон</label>
+        </div>
+
+        <div class="form-field">
+            <input type="text" placeholder="" name="customer-mail" id="customer-mail" class="form-input" />
+            <label for="customer-mail" class="form-label">Почта</label>
+        </div>
+        <!-- Комментарий к заказу -->
+        <div class="form-field">
+            <textarea name="comment" id="comment" rows="5"> </textarea>
+            <label for="comment" class="form-label">Комментарий</label>
+        </div>
+
+        <div class="form-field">
+            <div>
+                <input type="checkbox" required value="policy" name="policy" id="policy" />
+                <label for="policy">Согласен с рассылкой и пинимаю</label>
+                <a href="">Условия договора</a>
+            </div>
+        </div>
+
+        <button type="submit">Отправить</button>
+    </form>
+
+    <!-- Комментарий к заказу -->
+
+    <!-- Подтверждение -->
+
+    <script>
+        (() => {
+            document.querySelector('.js-form').addEventListener('submit', e => {
+                e.preventDefault();
+
+                console.log('');
+                console.count('Submit #');
+
+                new FormData(e.currentTarget).forEach((value, name) =>
+                    console.log(`${name}: ${value}`),
+                );
+            });
+        })();
+    </script>
+</body>
+
+</html>
