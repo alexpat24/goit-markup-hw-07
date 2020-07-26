@@ -82,21 +82,15 @@ main {
         justify-content: space-between;
         
     }
-    .quality-link{     
-        width: 270px;
-        margin-left: 10px;
-    /* border: 2px solid var(--primary-white-color); */
+    .quality-img{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+
+        top: 25px;
+        left: 100px;
     }
-    &::before{
-        display: block;
-        content: "";
-        height: 120px;
-        outline: 1px solid #ffffff;
-        background-size: 70px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color:#F5F4FA ;        
-    }
+    
     .quality-text{
         font-family: 'Roboto';
         font-size: 14px;
@@ -117,9 +111,25 @@ main {
         margin-bottom: 0px;
     }
     
+}
+.quality-link{
+    position: relative;    
+    margin-left: 10px;
+    width: 270px;
+    /* border: 2px solid var(--primary-white-color); */
+    &::before{
+        display: block;
+        content: "";
+        height: 120px;
+        outline: 1px solid #ffffff;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color:#F5F4FA ;        
+    }
     .img-antena::before{
-        background-image: url(./img/antenna1.svg);
-        
+        background-image: url(/img/antenna1.svg);
+        $color: #000000;
     }
     .img-clock::before{
         background-image: url(./img/clock1.svg);
@@ -136,13 +146,15 @@ main {
 }
 
 
-
 /* what are we do product */
 /* h2 neme of section */
 .product-part-conteiner{
-  padding-top: 95px;
-  padding-bottom: 75px;
+    padding-top: 95px;
+    padding-bottom: 75px;
+    
+
     .section-title{
+        position: relative;
         @extend %section-title;
     }
     .product-part-list{
@@ -155,15 +167,15 @@ main {
         justify-content: space-between;
         position: relative;
         
-        
-    
     }
     .product-part-link{
-        display: flex;       
+        position: relative;
+        display: flex;
+        justify-content: space-between;       
  
     } 
     .product-text{
-        background-color: rgba(47, 48, 58, 0.9);
+        background-color: rgba(47, 48, 58, 0.7);
         color: var(--primary-white-color);
         width:370px;
         height: 40px;
@@ -176,6 +188,8 @@ main {
         padding-top: 30px;
         padding-bottom: auto;
         position: absolute;
+        // display: flex;
+        justify-content: space-between;
         bottom: 0;
         left: 0;
         

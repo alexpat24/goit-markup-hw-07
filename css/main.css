@@ -218,21 +218,16 @@ main {
           justify-content: space-between;
 }
 
-.quality .quality-link {
-  width: 270px;
-  margin-left: 10px;
-  /* border: 2px solid var(--primary-white-color); */
-}
-
-.quality::before {
-  display: block;
-  content: "";
-  height: 120px;
-  outline: 1px solid #ffffff;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #F5F4FA;
+.quality .quality-img {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 25px;
+  left: 100px;
 }
 
 .quality .quality-text {
@@ -256,19 +251,37 @@ main {
   margin-bottom: 0px;
 }
 
-.quality .img-antena::before {
-  background-image: url(./img/antenna1.svg);
+.quality-link {
+  position: relative;
+  margin-left: 10px;
+  width: 270px;
+  /* border: 2px solid var(--primary-white-color); */
 }
 
-.quality .img-clock::before {
+.quality-link::before {
+  display: block;
+  content: "";
+  height: 120px;
+  outline: 1px solid #ffffff;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+}
+
+.quality-link .img-antena::before {
+  background-image: url(/img/antenna1.svg);
+}
+
+.quality-link .img-clock::before {
   background-image: url(./img/clock1.svg);
 }
 
-.quality .img-diagram::before {
+.quality-link .img-diagram::before {
   background-image: url(./img/diagram1.svg);
 }
 
-.quality .img-astronaut::before {
+.quality-link .img-astronaut::before {
   background-image: url(./img/astronaut1.svg);
 }
 
@@ -277,6 +290,10 @@ main {
 .product-part-conteiner {
   padding-top: 95px;
   padding-bottom: 75px;
+}
+
+.product-part-conteiner .section-title {
+  position: relative;
 }
 
 .product-part-conteiner .product-part-list {
@@ -293,13 +310,17 @@ main {
 }
 
 .product-part-conteiner .product-part-link {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .product-part-conteiner .product-text {
-  background-color: rgba(47, 48, 58, 0.9);
+  background-color: rgba(47, 48, 58, 0.7);
   color: var(--primary-white-color);
   width: 370px;
   height: 40px;
@@ -312,6 +333,9 @@ main {
   padding-top: 30px;
   padding-bottom: auto;
   position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   bottom: 0;
   left: 0;
 }
