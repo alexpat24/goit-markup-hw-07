@@ -2,13 +2,13 @@
     "liveSassCompile.settings.formats": [
         {
             "format": "expanded",
-            "extensionName": "main.css",
-            "savePath": "./css"
+            "extensionName": ".css",
+            "savePath": "/css"
         },
         {
             "format": "compressed",
-            "extensionName": "main.min.css",
-            "savePath": "./css"
+            "extensionName": ".min.css",
+            "savePath": "/css"
         }
     ],
     "liveSassCompile.settings.excludeList": [
@@ -19,5 +19,6 @@
     "liveSassCompile.settings.autoprefix": [
         "> 1%",
         "last 2 versions"
-    ]
+    ],
+    "liveServer.settings.mltiRootWorkspaceName": "goit-markup-hw-07"
 }

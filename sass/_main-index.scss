@@ -97,22 +97,6 @@ main {
         background-position: center;
         background-color:#F5F4FA ;        
     }
-    .img-antena::before{
-        background-image: url(../img/antenna1.svg);
-        $color: #000000;
-    }
-    .img-clock::before{
-        background-image: url(../img/clock1.svg);
-        $color: #000000;
-    }
-    .img-diagram::before{
-        background-image: url(../img/diagram1.svg);
-        $color: #000000;
-    }
-    .img-astronaut::before{
-        background-image: url(../img/astronaut1.svg);
-        $color: #000000;
-    }
     .quality-text{
         font-family: 'Roboto';
         font-size: 14px;
@@ -131,9 +115,26 @@ main {
         color: #757575;
         margin-top: 10px;
         margin-bottom: 0px;
+    }
+    
+    .img-antena::before{
+        background-image: url(./img/antenna1.svg);
         
     }
+    .img-clock::before{
+        background-image: url(./img/clock1.svg);
+        $color: #000000;
+    }
+    .img-diagram::before{
+        background-image: url(./img/diagram1.svg);
+        $color: #000000;
+    }
+    .img-astronaut::before{
+        background-image: url(./img/astronaut1.svg);
+        $color: #000000;
+    }
 }
+
 
 
 /* what are we do product */
