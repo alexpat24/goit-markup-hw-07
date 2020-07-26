@@ -1,33 +1,11 @@
-@import"./root-variables";
-@import"./header";
-@import"./main-index";
+@import"./components/root-variables";
+@import"./components/variables";
+@import"./base/header";
+@import"./base/main-index";
 @import"./utils/placeholders";
-@import"./footer";
-@import"./main-portfolio";
-@import"./sprite";
-@import"./form";
+@import"./base/footer";
+@import"./base/main-portfolio";
+@import"./components/sprite";
+@import"./base/form";
 
 
-body{ 
-    background-color: #ffffff ;
-    margin: 0px;
-       
-}
-
-.width-conteiner{
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 480px;
-    max-width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-/* what are we do */
-/* li out dot */
-ul{
-    list-style: none;
-}
-/* h1 in portfolio */
-.ghost{
-    display: none
-}
