@@ -51,7 +51,7 @@
       <h1 class="baner-text">
         ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
       </h1>
-      <button class="baner-button" data-open-modal>Заказать услугу</button>
+      <button class="baner-button" data-modal-open>Заказать услугу</button>
       <!-- <button class="baner-button" type="submit">Заказать услугу</button> -->
     </section>
     <!-- quality part -->
@@ -304,7 +304,7 @@
     </section>
     <!-- Модельное окно -->
     <!-- Форма -->
-    <div class="backdrop is-hidden" data-backdrop>
+    <div class="backdrop is-hidden" data-modal>
       <form autocomplete="off" class="form js-form">
         <h2 class="form-name">Оставьте свои данные, мы вам перезвоним</h2>
 
@@ -372,8 +372,8 @@
           </div>
         </div>
 
-        <button type="submit" class="form-push">Отправить</button>
-        <button type="reset" class="form-close-button" data-close-modal>
+        <button class="form-push" type="submit">Отправить</button>
+        <button class="form-close-button" type="reset" data-modal-close>
           <svg class="form-icon-close">
             <use href="./img/form-symbol-defs.svg#icon-form-close"></use>
           </svg>
@@ -441,41 +441,43 @@
     </div>
     <p class="disigner-info">2020 | Developed by GoIT Students</p>
   </footer>
-  <script>
-    (() => {
-      document.querySelector('.js-form').addEventListener('submit', e => {
-        e.preventDefault('');
 
-        console.log('');
-        console.count('Submit #');
 
-        new FormData(e.currentTarget).forEach((value, name) =>
-          console.log(`${name}: ${value}`),
-        );
-      });
-    })();
-  </script>
-  <script>
-    const refs = {
-      openModalBtn: document.querySelector("[data-open-modal]"),
-      closeModalBtn: document.querySelector("[data-close-modal]"),
-      backdrop: document.querySelector("[data-backdrop]"),
-    };
-
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-
-    refs.backdrop.addEventListener("click", logBackdropClick);
-
-    function toggleModal() {
-      refs.backdrop.classList.toggle("is-hidden");
-    }
-
-    function logBackdropClick() {
-      console.log("Это клик в бекдроп");
-    }
-  </script>
-  <script src="./js/modal.js"></script>
 </body>
+<script>
+  (() => {
+    document.querySelector('.js-form').addEventListener('submit', e => {
+      e.preventDefault('');
+
+      console.log('');
+      console.count('Submit #');
+
+      new FormData(e.currentTarget).forEach((value, name) =>
+        console.log(`${name}: ${value}`),
+      );
+    });
+  })();
+</script>
+<!-- <script>
+  const refs = {
+    openModalBtn: document.querySelector("[data-open-modal]"),
+    closeModalBtn: document.querySelector("[data-close-modal]"),
+    backdrop: document.querySelector("[data-backdrop]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  // refs.backdrop.addEventListener("click", logBackdropClick);
+
+  function toggleModal() {
+    refs.backdrop.classList.toggle("is-hidden");
+  }
+
+  // function logBackdropClick() {
+  //   console.log("Это клик в бекдроп");
+  // }
+</script> -->
+<script src="./js/modal.js"></script>
 
 </html>
