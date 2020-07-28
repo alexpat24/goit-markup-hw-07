@@ -444,20 +444,7 @@
 
 
 </body>
-<script>
-  (() => {
-    document.querySelector('.js-form').addEventListener('submit', e => {
-      e.preventDefault('');
 
-      console.log('');
-      console.count('Submit #');
-
-      new FormData(e.currentTarget).forEach((value, name) =>
-        console.log(`${name}: ${value}`),
-      );
-    });
-  })();
-</script>
 <!-- <script>
   const refs = {
     openModalBtn: document.querySelector("[data-open-modal]"),
@@ -479,5 +466,19 @@
   // }
 </script> -->
 <script src="./js/modal.js"></script>
+<script>
+  (() => {
+    document.querySelector('.js-form').addEventListener('submit', e => {
+      // e.preventDefault('');
+
+      console.log('');
+      console.count('Submit #');
+
+      new FormData(e.currentTarget).forEach((value, name) =>
+        console.log(`${name}: ${value}`),
+      );
+    });
+  })();
+</script>
 
 </html>
