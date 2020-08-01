@@ -7,12 +7,31 @@ body{
 .width-conteiner{
     margin-left: auto;
     margin-right: auto;
-    min-width: 480px;
+    // // min-width: 480px;
     max-width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
+    
+
+//    @media screen and (min-width: 480px) {
+//         width:480px;
+//         display: flex;
+//         flex-direction: column;
+//    }
+
+   
+//    @media screen and (min-width: 768px) {
+//         width:768px;
+//         display: flex;
+//         flex-wrap: wrap;
+//     }
 
     
+//    @media screen and (min-width: 768px) {
+//        width:1170px;
+
+//     }
+
 }
 /* what are we do */
 /* li out dot */

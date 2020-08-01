@@ -14,7 +14,6 @@ body {
 .width-conteiner {
   margin-left: auto;
   margin-right: auto;
-  min-width: 480px;
   max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
@@ -66,9 +65,12 @@ header {
 }
 
 .link-up-mail, .link-up-phone {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: column;
+      -ms-flex: column;
+          flex: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -186,7 +188,7 @@ main {
   color: var(--primary-white-color);
 }
 
-.baner .baner-button {
+.baner-button {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -195,9 +197,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 200px;
   height: 50px;
   left: 0px;
@@ -206,14 +205,15 @@ main {
   margin-right: auto;
   margin-top: 440px;
   margin-bottom: 0;
+  text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
-  border: 2px solid #ffffff;
+  border: none;
   color: var(--primary-white-color);
-  background-color: var(--primary-text-color);
-  border-radius: 10px;
+  background-color: var(--accent-text-color);
+  border-radius: 5px;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -222,7 +222,7 @@ main {
 .baner .baner-button:focus {
   -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
-  background-color: var(--accent-text-color);
+  color: var(--primary-black-color);
   cursor: pointer;
 }
 

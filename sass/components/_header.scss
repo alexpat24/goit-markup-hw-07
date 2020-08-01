@@ -30,7 +30,8 @@ header {
 }
 
 .link-up-mail, .link-up-phone {
-    display: inline-flex;
+    display:flex;
+    flex: column;
     align-items:center;
     color: #757575;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
